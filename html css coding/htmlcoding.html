@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Box model</title>
+    <style>  
+    .container{
+        background-color: rgb(127, 243, 243);
+        border: 3px solid rgb(30, 21, 160);
+        
+        /*padding-top: 20px ;
+        padding-bottom: 20px;
+        padding-left: 20px;*/
+        /*how we can padding left right like x y */
+        padding: 40px 30px 20px 50px ; /* top rigth bottom left */
+        margin: 20px ;
+        border-radius: 23px;
+        width: 1000px;
+        box-sizing: border-box;
+        margin-top:0px;
+        background-image: url(s.jpg);
+      
+    }
+
+    .container1{
+        background-color: rgb(127, 243, 243);
+        border: 3px solid rgb(30, 21, 160);
+        
+        /*padding-top: 20px ;
+        padding-bottom: 20px;
+        padding-left: 20px;*/
+        /*how we can padding left right like x y */
+        padding: 40px 30px 20px 50px ; /* top rigth bottom left */
+        margin: 20px ;
+        border-radius: 23px;
+        width: 187px;
+        box-sizing: border-box;
+        margin-top:0px;
+        background-image: url(container1.jpeg);
+      
+    }
+
+
+    .row{
+display: flex;
+flex-wrap: wrap;
+
+    }
+    .footer-col h4{
+
+      font-size: 18px;
+      color: rgb(5, 1, 8);
+      text-transform: capitalize;
+      margin-bottom: 30px;
+      font-weight: 500;
+      position: relative;
+      background-color: rgb(115, 255, 0);
+      background-image: url(headingbg.jpg);
+
+    }
+    .footer-col h4::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: rgb(48, 38, 39);
+
+    }
+    .footer{
+background-color:rgb(77, 228, 127);
+margin-left: 400px;
+margin-right: 400px;
+margin-top: 100px;
+box-sizing: border-box;
+border: 3px solid rgb(59, 17, 247);
+background-image: url(footer.jpg);
+
+}
+.footerdes{
+    border: 3px solid rgb(17, 96, 121);
+    padding-left: 100px;
+    margin-top: 0px;
+        /*max-width: 10000px;*/
+}
+.logo{
+padding-left: 0px;
+border-radius: 80px;
+border-left: 80px;
+width: 80px;
+height: 80px;
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        
+        <h3 style="background-color: red;padding-left:400px;">            This is my headinggg</h3>
+    <p id="first" >Hello world1 </p>
+    <img src="logo.png" class="logo">
+</div>
+<div class="container1">
+    <h3 style="color: blue;font-size: 20px;">This is my heading</h3>
+    <p id="second">Hello world2 </p>
+</div>
+<div class="container">
+    <h3>This is my heading</h3>
+    <p id="third">Hello world3 </p>
+</div>
+
+<footer class="footer">
+    
+    <div class="footerdes">
+        
+        <div class="row">
+            <div class="footer-col">
+               <h4>company</h4> 
+               <ul>
+                   <li><a href="#">about us</a></li>
+                   <li><a href="#">our services</a></li>
+                   <li><a href="#">privacy</a></li>
+               </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>get help</h4> 
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                </ul>
+             </div>
+
+             <div class="footer-col">
+                <h4>follow us</h4> 
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+             </div>
+             
+
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
